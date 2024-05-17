@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900 &display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(114, 114, 114); */
+
+    gap: 30px;
+    height: 70%;
+    width: 25%;
+}
+.up_section {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    /* padding: 20px; */
+    justify-content: space-between;
+}
+
+.up_section p, b {
+    color: #fff;
+    font-size: 20px;
+
+
+}
+
+
+
+
+.screen {
+    height: 25%;
+}
+
+
+input {
+
+    height: 100%;
+    width: 100%;
+    font-size: 50px;
+    text-align: end;
+    font-weight: bold;
+    padding-right: 20px;
+    background-color:  hsl(224, 36%, 15%);
+    border: none;
+    color: #fff;
+    outline: none;
+    border-radius: 10px;
+}
+.down_section {
+    background-color: hsl(223, 31%, 20%);
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    border-radius: 10px;
+
+
+}
+.block {
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 25%, 89%);
+    border-radius:15px;
+    border-bottom: 5px solid hsl(28, 16%, 65%);
+    cursor: pointer;
+    font-size: 30px;
+    color: hsl(223, 31%, 20%);
+    font-weight: bold;
+}
+
+.reset{
+    grid-column:span 2;
+    background-color:hsl(225, 21%, 49%) ;
+    border-bottom: 5px solid hsl(224, 28%, 35%);
+    color: white;
+}
+
+.equal{
+    grid-column:span 2;
+    background-color:hsl(6, 63%, 50%) ;
+    border-bottom: 5px solid hsl(6, 70%, 34%);
+    color: white;
+}
+
+.del{
+    background-color:hsl(225, 21%, 49%) ;
+    border-bottom: 5px solid hsl(224, 28%, 35%);
+    color: white;
+}
+
+.index{
+    display: flex;
+    gap: 10px;
+}
+.switch_btn{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: flex-end;
+
+}
+
+.right p{
+    color: #fff;
+    font-size: 10px;
+}
+
+
+
+.check {
+    position: relative;
+    background: linear-gradient(90deg, #f19af3, #f099b5);
+    line-height: 0;
+    font-size: 25px;
+   }
+   
+   .check input[type="checkbox"],
+   .check label,
+   .check label::before,
+   .check label::after {
+    appearance: none;
+    display: inline-block;
+    font-size: inherit;
+    border-radius: 1em;
+    border: 0;
+    transition: .35s ease-in-out;
+    box-sizing: border-box;
+    cursor: pointer;
+   }
+   
+   .check {
+    appearance: none;
+    display: inline-block;
+    border-radius: 1em;
+    border: 0;
+    transition: .35s ease-in-out;
+    box-sizing: border-box;
+    cursor: pointer;
+   }
+   
+   .check label {
+    width: 2.2em;
+    height: 1em;
+    background: #d7d7d7;
+    overflow: hidden;
+   }
+   
+   .check input[type="checkbox"] {
+    position: absolute;
+    z-index: 1;
+    width: .8em;
+    height: .8em;
+    top: .1em;
+    left: .1em;
+    background: linear-gradient(45deg, #dedede, #ffffff);
+    box-shadow: 0 6px 7px rgba(0,0,0,0.3);
+    outline: none;
+   }
+   
+   .check input[type="checkbox"]:checked {
+    left: 1.3em;
+   }
+   
+   .check input[type="checkbox"]:checked + label {
+    background: transparent;
+   }
+   
+   .check label::before,
+   .check label::after {
+    content: "· ·";
+    position: absolute;
+    overflow: hidden;
+    left: .50em;
+    top: .5em;
+    height: 1em;
+    letter-spacing: -.04em;
+    color: #9b9b9b;
+    font-family: "Times New Roman", serif;
+    z-index: 2;
+    font-size: .6em;
+    border-radius: 0;
+    transform-origin: 0 0 -.5em;
+    backface-visibility: hidden;
+   }
+   
+   .check label::after {
+    content: "?";
+    top: .65em;
+    left: .6em;
+    height: .1em;
+    width: .35em;
+    font-size: .2em;
+    transform-origin: 0 0 -.4em;
+   }
+   
+   .check input[type="checkbox"]:checked + label::before,
+   .check input[type="checkbox"]:checked + label::after {
+    left: 2.55em;
+    top: .4em;
+    line-height: .1em;
+    transform: rotateY(360deg);
+   }
+   
+   .check input[type="checkbox"]:checked + label::after {
+    height: .16em;
+    top: .55em;
+    left: 2.6em;
+    font-size: .6em;
+    line-height: 0;
+   }
+   

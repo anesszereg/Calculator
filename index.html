@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="up_section">
+      <b>Calc</b>
+      <div class="right">
+        <p>THEME</p>
+        <div class="switch_btn">
+          <div class="index">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div class="check">
+            <input id="check" type="checkbox">
+            <label for="check"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <input id="result" type="text" value="0">
+    </div>
+    <div class="down_section">
+      <div class="block" onclick="addToScreen('7')">7</div>
+      <div class="block" onclick="addToScreen('8')">8</div>
+      <div class="block" onclick="addToScreen('9')">9</div>
+      <div class="block del" onclick="deleteFromScreen()" >DEL</div>
+      <div class="block" onclick="addToScreen('4')">4</div>
+      <div class="block" onclick="addToScreen('5')">5</div>
+      <div class="block" onclick="addToScreen('6')">6</div>
+      <div class="block" onclick="addToScreen('+')">+</div>
+      <div class="block" onclick="addToScreen('1')">1</div>
+      <div class="block" onclick="addToScreen('2')">2</div>
+      <div class="block" onclick="addToScreen('3')">3</div>
+      <div class="block" onclick="addToScreen('-')">-</div>
+      <div class="block" onclick="addToScreen('.')" >.</div>
+      <div class="block" onclick="addToScreen('0')">0</div>
+      <div class="block" onclick="addToScreen('/')">/</div>
+      <div class="block" onclick="addToScreen('*')">X</div>
+      <div class="block reset" onclick="clearScreen()">reset</div>
+      <div class="block equal" onclick="calculate()">=</div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
